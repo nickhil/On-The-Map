@@ -17,7 +17,9 @@ class StudentLocation {
     
     // GETing student locations
     func gettingStudentLocations(completionHandler: @escaping (_ sucess: Bool, _ errorString: String?)-> Void) {
-        let request = NSMutableURLRequest(url: URL(string: "https://parse.udacity.com/parse/classes/StudentLocation")!)
+     
+        let request = NSMutableURLRequest(url: URL(string: "https://parse.udacity.com/parse/classes/StudentLocation?limit=100&order=-updatedAt")!)
+        
         request.addValue(self.Parse_ApplicationID, forHTTPHeaderField: "X-Parse-Application-Id")
         request.addValue(self.REST_APIKey, forHTTPHeaderField: "X-Parse-REST-API-Key")
         
