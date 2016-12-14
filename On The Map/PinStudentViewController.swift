@@ -27,6 +27,16 @@ class PinStudentViewController: UIViewController,MKMapViewDelegate {
       self.dismiss(animated: true, completion: nil)
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(true)
+        subscribeToKeyboardNotifications()
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillAppear(true)
+        unsubscribeFromKeyboardNotifications()
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         linkTextField.delegate = textFieldDelegate
@@ -115,4 +125,33 @@ class PinStudentViewController: UIViewController,MKMapViewDelegate {
         submitView.isHidden = false
         findView.isHidden = true
     }
+
+        func subscribeToKeyboardNotifications() {
+        NotificationCenter.default.addObserver(self, selector: #selector(PinStudentViewController.keyboardWillShow(_ :)), name: NSNotification.Name.UIKeyboardWillShow, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(PinStudentViewController.keyboardWillHide(_ :)), name: NSNotification.Name.UIKeyboardWillHide, object: nil)
+    }
+    
+        func unsubscribeFromKeyboardNotifications() {
+        NotificationCenter.default.removeObserver(self, name: NSNotification.Name.UIKeyboardWillShow, object: nil)
+        NotificationCenter.default.removeObserver(self, name: NSNotification.Name.UIKeyboardWillHide, object: nil)
+    }
+    
+   
+    func keyboardWillShow(_ notification:NSNotification) {
+            view.frame.origin.y = -getKeyboardHeight(notification)
+        }
+    
+    
+    
+    func keyboardWillHide(_ notification:NSNotification) {
+            view.frame.origin.y = 0
+    }
+    
+        func getKeyboardHeight(_ notification:NSNotification)-> CGFloat {
+        let userInfo = notification.userInfo
+        let keyboardSize = userInfo![UIKeyboardFrameEndUserInfoKey] as! NSValue
+        return keyboardSize.cgRectValue.height
+    }
+    
+
 }

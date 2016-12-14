@@ -35,6 +35,7 @@ class StudentLocation {
                 completionHandler(false, "No data was returned.")
                 return
             }
+            
             let parseResult = (try! JSONSerialization.jsonObject(with: data, options: .allowFragments)) as! NSDictionary
             if let results = parseResult["results"] as? [[String:AnyObject]] {
                 for result in results {

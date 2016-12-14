@@ -17,7 +17,7 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="qcS-vQ-evP" userLabel="ActivityIndicator"/>
@@ -68,7 +68,7 @@
                             <constraint firstItem="Gud-AG-JOq" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="DTz-LM-gCW"/>
                             <constraint firstItem="qcS-vQ-evP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ET1-go-PTt"/>
                             <constraint firstItem="qcS-vQ-evP" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="GYT-78-khW"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Gud-AG-JOq" secondAttribute="bottom" constant="200" id="WmM-O9-fBD"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Gud-AG-JOq" secondAttribute="bottom" constant="200" id="WmM-O9-fBD" userLabel="Bottom Layout Guide.top = Stack View.bottom + 50"/>
                             <constraint firstItem="Gud-AG-JOq" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="h9k-YW-Yny"/>
                         </constraints>
                     </view>
@@ -124,30 +124,30 @@
             <objects>
                 <tableViewController id="D05-Qd-Vbv" userLabel="ListViewController" customClass="ListViewController" customModule="On_The_Map" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="AFm-mQ-IVT">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <activityIndicatorView key="tableFooterView" hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="gray" id="KM9-B9-Wpp">
-                            <rect key="frame" x="0.0" y="136" width="375" height="20"/>
+                            <rect key="frame" x="0.0" y="136" width="320" height="20"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         </activityIndicatorView>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="studentCell" textLabel="Ekk-W9-q1z" detailTextLabel="8pY-EW-fhB" style="IBUITableViewCellStyleSubtitle" id="jdh-3i-W5e">
-                                <rect key="frame" x="0.0" y="92" width="375" height="44"/>
+                                <rect key="frame" x="0.0" y="92" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="jdh-3i-W5e" id="OzT-sI-YgE">
-                                    <frame key="frameInset" width="375" height="43.5"/>
+                                    <frame key="frameInset" width="320" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Ekk-W9-q1z">
-                                            <frame key="frameInset" minX="15" minY="5" width="33.5" height="20.5"/>
+                                            <frame key="frameInset" minX="15" minY="4" width="34" height="21"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="8pY-EW-fhB">
-                                            <frame key="frameInset" minX="15" minY="25.5" width="44" height="14.5"/>
+                                            <frame key="frameInset" minX="15" minY="25" width="44" height="15"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                             <nil key="textColor"/>
@@ -222,7 +222,7 @@
                         <viewControllerLayoutGuide type="bottom" id="zAh-dr-pbN"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="ao6-ks-sPk">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="dlf-GU-Xge">
@@ -296,13 +296,16 @@
                         <viewControllerLayoutGuide type="bottom" id="bps-g8-l8C"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="43d-IS-gMW">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="otv-tQ-L9M" userLabel="SubmitView">
                                 <subviews>
                                     <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="g0h-5e-Azl" userLabel="mapView"/>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Link To Share" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qja-an-fHH" userLabel="linkTextField">
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="eY4-ke-GLK"/>
+                                        </constraints>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
@@ -317,11 +320,14 @@
                                         </connections>
                                     </button>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstItem="qja-an-fHH" firstAttribute="height" secondItem="n1M-7z-XSO" secondAttribute="height" id="E8T-If-C8r"/>
+                                </constraints>
                             </stackView>
                             <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="white" translatesAutoresizingMaskIntoConstraints="NO" id="sQk-iR-7SP" userLabel="ActivityIndicator"/>
                             <stackView opaque="NO" contentMode="scaleAspectFill" axis="vertical" distribution="equalSpacing" alignment="center" baselineRelativeArrangement="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zKy-2q-Cf8" userLabel="FindView">
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="253" verticalCompressionResistancePriority="751" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FUd-4f-IoB" userLabel="studyLabel">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="253" verticalCompressionResistancePriority="751" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FUd-4f-IoB" userLabel="studyLabel">
                                         <attributedString key="attributedText">
                                             <fragment content="Where are  You Studying today ?">
                                                 <attributes>
@@ -348,8 +354,8 @@
                                     </button>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="hL2-di-jOR" secondAttribute="trailing" constant="49" id="KTD-88-x4T"/>
-                                    <constraint firstItem="hL2-di-jOR" firstAttribute="leading" secondItem="zKy-2q-Cf8" secondAttribute="leading" constant="49" id="sVw-yb-m6a"/>
+                                    <constraint firstAttribute="trailing" secondItem="FUd-4f-IoB" secondAttribute="trailing" id="BCH-Qr-mBL"/>
+                                    <constraint firstItem="FUd-4f-IoB" firstAttribute="leading" secondItem="zKy-2q-Cf8" secondAttribute="leading" id="Jul-iy-nMR"/>
                                 </constraints>
                             </stackView>
                         </subviews>
@@ -359,12 +365,12 @@
                             <constraint firstItem="otv-tQ-L9M" firstAttribute="leading" secondItem="43d-IS-gMW" secondAttribute="leadingMargin" constant="10" id="Mln-Eu-pVp"/>
                             <constraint firstItem="zKy-2q-Cf8" firstAttribute="top" secondItem="xpS-QW-Lk3" secondAttribute="bottom" constant="107" id="NWQ-9m-4Uw"/>
                             <constraint firstItem="bps-g8-l8C" firstAttribute="top" secondItem="otv-tQ-L9M" secondAttribute="bottom" constant="70" id="NzC-jh-gVk"/>
-                            <constraint firstItem="bps-g8-l8C" firstAttribute="top" secondItem="zKy-2q-Cf8" secondAttribute="bottom" constant="100" id="OHm-0R-rxU"/>
+                            <constraint firstItem="bps-g8-l8C" firstAttribute="top" secondItem="zKy-2q-Cf8" secondAttribute="bottom" constant="100" id="OHm-0R-rxU" userLabel="Bottom Layout Guide.top = FindView.bottom + 10"/>
                             <constraint firstItem="sQk-iR-7SP" firstAttribute="centerX" secondItem="43d-IS-gMW" secondAttribute="centerX" id="T6F-Mw-X2H"/>
                             <constraint firstItem="otv-tQ-L9M" firstAttribute="top" secondItem="xpS-QW-Lk3" secondAttribute="bottom" constant="20" id="Vuj-rZ-JNl"/>
                             <constraint firstItem="sQk-iR-7SP" firstAttribute="centerY" secondItem="43d-IS-gMW" secondAttribute="centerY" id="mOn-Gy-wmM"/>
-                            <constraint firstItem="zKy-2q-Cf8" firstAttribute="leading" secondItem="43d-IS-gMW" secondAttribute="leadingMargin" constant="35" id="pe4-TD-2Zl"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="zKy-2q-Cf8" secondAttribute="trailing" constant="59" id="wtL-Z4-LDX"/>
+                            <constraint firstItem="zKy-2q-Cf8" firstAttribute="leading" secondItem="43d-IS-gMW" secondAttribute="leadingMargin" constant="35" id="pe4-TD-2Zl" userLabel="FindView.leading = leadingMargin + 10"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="zKy-2q-Cf8" secondAttribute="trailing" constant="59" id="wtL-Z4-LDX" userLabel="trailingMargin = FindView.trailing + 10"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="25x-oH-VY2">
